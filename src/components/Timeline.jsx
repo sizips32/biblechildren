@@ -6,7 +6,7 @@ export default function Timeline({ characters, selectedId, onSelect }) {
             {characters.map((char, idx) => (
                 <div key={char.id} className="timeline-item">
                     <div
-                        className={`timeline-dot${selectedId === char.id ? ' active' : ''}`}
+                        className={`timeline-dot${selectedId === char.id ? ' active' : ''} ${char.id === 'joseph' ? ' small' : ''}`}
                         onClick={() => onSelect(char.id)}
                     />
                     <div className="timeline-label">

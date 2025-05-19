@@ -24,6 +24,15 @@ export const bibleCharacters = [
         position: [10, 0, 0],
     },
     {
+        id: 'joseph',
+        name: '요셉',
+        year: '약 1800년 전',
+        description: '애굽의 총리. 형제들에게 버림받았으나 하나님의 섭리로 가족을 구원함.',
+        image: '/assets/joseph.png',
+        position: [12, 0, 0],
+        tags: ['창세기', '요셉', '애굽 총리', '형제 용서', '하나님의 섭리']
+    },
+    {
         id: 'moses',
         name: '모세',
         year: '약 1500년 전',

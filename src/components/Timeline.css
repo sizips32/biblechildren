@@ -1,0 +1,47 @@
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0 24px 0;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff3;
+    border: 4px solid #fff;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background 0.2s, border 0.2s;
+}
+
+.timeline-dot.active {
+    background: #fff;
+    border-color: #ffb3b3;
+    box-shadow: 0 0 12px #fff;
+}
+
+.timeline-label {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 16px;
+    left: 100%;
+    width: 80px;
+    height: 4px;
+    background: #fff5;
+    z-index: -1;
+}
